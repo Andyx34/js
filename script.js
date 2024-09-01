@@ -69,7 +69,7 @@ div.addEventListener('click',function(){
 
 });
 
-//boton mensaje
+//mensaje
 
 const botonMensaje=document.querySelector('#mi-boton2');
 botonMensaje.addEventListener('click',function(){
