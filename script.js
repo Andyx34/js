@@ -52,12 +52,26 @@ for(let i=1;i<=10;i++){
 
 //boton
 const boton=document.querySelector("#mi-boton")
-boton.textContent="nuevo texto";
+boton.textContent="texto cambiado";
 
 //fondo
 
-const elemento=document.getElementById("elemento");
+const div =document.querySelector('#miDiv');
 
-elemento.addEventListener("click",function(){
-elemento.style.backgroundColor='yellow';
+let colorOriginal=div.style.backgroundColor;
+
+div.addEventListener('click',function(){
+    if (div.style.backgroundColor === 'lightblue') {
+        div.style.backgroundColor = colorOriginal;
+    } else {
+        div.style.backgroundColor = 'lightblue';
+    }
+
+});
+
+//boton mensaje
+
+const botonMensaje=document.querySelector('#mi-boton2');
+botonMensaje.addEventListener('click',function(){
+    alert('¡Script correcto y funcional!')
 });
